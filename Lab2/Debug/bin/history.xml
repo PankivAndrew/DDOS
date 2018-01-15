@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=Lab2.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Lab2 -TC:\CooCox\CoIDE\configuration\ProgramData\Lab2/arm-gcc-link.ld -g">
+      <target file="Lab2.elf" lastModified="160fb77b778">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="160fb779469"/>
+         <source file="..\obj\main.o" lastModified="160fb779819"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="160fb77988a"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="160fb779c0f"/>
+         <source file="..\obj\syscalls.o" lastModified="160fb779fa9"/>
+         <source file="..\obj\stm32f0xx_usart.o" lastModified="160fb77a34d"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="160fb77a67f"/>
+         <source file="..\obj\stm32f0xx_gpio_init.o" lastModified="160fb77a9fe"/>
+         <source file="..\obj\stm32f0xx_exti.o" lastModified="160fb77ad6f"/>
+         <source file="..\obj\stm32f0xx_syscfg.o" lastModified="160fb77b0b0"/>
+         <source file="..\obj\stm32f0xx_misc.o" lastModified="160fb77b41f"/>
+      </target>
+   </processor>
+</history>

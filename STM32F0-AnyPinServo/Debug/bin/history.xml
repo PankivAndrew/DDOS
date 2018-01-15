@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=STM32F0-AnyPinServo.map -O0 --gc-sections -LD:\CoIDE\configuration\ProgramData\STM32F0-AnyPinServo -TD:\CoIDE\configuration\ProgramData\STM32F0-AnyPinServo/arm-gcc-link.ld -g">
+      <target file="STM32F0-AnyPinServo.elf" lastModified="160fb39f042">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="160fb39de39"/>
+         <source file="..\obj\main.o" lastModified="160fb39e054"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="160fb39e0bf"/>
+         <source file="..\obj\APS.o" lastModified="160fb39e31e"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="160fb39e50f"/>
+         <source file="..\obj\stm32f0xx_rtc.o" lastModified="160fb39e784"/>
+         <source file="..\obj\syscalls.o" lastModified="160fb39e89b"/>
+         <source file="..\obj\stm32f0xx_tim.o" lastModified="160fb39eb61"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="160fb39ec67"/>
+         <source file="..\obj\stm32f0xx_misc.o" lastModified="160fb39ed5c"/>
+      </target>
+   </processor>
+</history>
